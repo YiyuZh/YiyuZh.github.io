@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title id="page-title">Yiyu 的个人博客</title>
+  <meta id="page-description" name="description" content="Yiyu 的个人博客：记录项目、技术总结与学习笔记。" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="hero" id="home">
+    <nav class="navbar">
+      <a class="brand" href="#home" id="brand-name">Yiyu Blog</a>
+      <ul>
+        <li><a href="#about">关于我</a></li>
+        <li><a href="#projects">项目展示</a></li>
+        <li><a href="#blog">博客文章</a></li>
+        <li><a href="#contact">联系方式</a></li>
+      </ul>
+    </nav>
+
+    <div class="hero-content">
+      <p class="badge">👋 欢迎来到我的主页</p>
+      <h1 id="hero-title">你好，我是 Yiyu</h1>
+      <p id="hero-intro">我是一名热爱技术与创造的开发者，这里会持续分享我做过的项目、实践经验与学习心得。</p>
+      <div class="hero-actions">
+        <a class="btn primary" href="#projects">查看项目</a>
+        <a class="btn" href="#blog">阅读博客</a>
+      </div>
+    </div>
+  </header>
+
+  <main class="container">
+    <section id="about" class="card">
+      <h2>关于我</h2>
+      <p>我专注于前端开发、产品原型和 AI 工具实践。希望通过这个博客，把我在项目中遇到的问题、解决方案和思考沉淀下来。</p>
+      <ul class="skills">
+        <li>💻 前端开发：HTML / CSS / JavaScript</li>
+        <li>🧠 技术方向：Web 应用、自动化、AI 助手</li>
+        <li>🚀 目标：持续构建、持续分享、持续成长</li>
+      </ul>
+    </section>
+
+    <section id="projects">
+      <div class="section-title">
+        <h2>项目展示</h2>
+        <p>以下为我的项目展示（仅站点维护者可通过仓库更新）。</p>
+      </div>
+      <div class="grid" id="project-list"></div>
+    </section>
+
+    <section id="blog">
+      <div class="section-title">
+        <h2>博客文章</h2>
+        <p>你可以在这里持续发布你的技术文章和项目复盘。</p>
+      </div>
+      <div class="grid">
+        <article class="card post">
+          <time datetime="2026-01-12">2026-01-12</time>
+          <h3>从 0 到 1 搭建 GitHub Pages 个人博客</h3>
+          <p>记录如何快速建立一个可维护、可扩展的个人技术博客主页。</p>
+          <a href="#" aria-label="阅读文章 1">阅读全文 →</a>
+        </article>
+        <article class="card post">
+          <time datetime="2026-02-03">2026-02-03</time>
+          <h3>我在项目中常用的前端优化技巧</h3>
+          <p>从资源加载、渲染性能到用户体验，整理一套实用优化清单。</p>
+          <a href="#" aria-label="阅读文章 2">阅读全文 →</a>
+        </article>
+        <article class="card post">
+          <time datetime="2026-02-19">2026-02-19</time>
+          <h3>一次 AI 项目实践复盘：从想法到上线</h3>
+          <p>分享需求拆解、技术选型、迭代流程和踩坑经验。</p>
+          <a href="#" aria-label="阅读文章 3">阅读全文 →</a>
+        </article>
+      </div>
+    </section>
+
+    <section id="contact" class="card">
+      <h2>联系方式</h2>
+      <p>欢迎交流合作，你可以通过以下方式联系我：</p>
+      <ul class="contact-list">
+        <li>GitHub：<a id="github-link" href="https://github.com/YiyuZh" target="_blank" rel="noreferrer">https://github.com/YiyuZh</a></li>
+        <li>Email：<a id="email-link" href="mailto:autsky6666@gmail.com">autsky6666@gmail.com</a></li>
+      </ul>
+    </section>
+  </main>
+
+  <footer>
+    <p>© <span id="year"></span> <span id="footer-name">Yiyu</span>. Built with ❤️ on GitHub Pages.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

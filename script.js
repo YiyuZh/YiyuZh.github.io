@@ -1,31 +1,3 @@
-// 在这里集中修改你的个人信息与项目展示内容
-const SITE_CONFIG = {
-  name: 'Yiyu',
-  github: 'https://github.com/YiyuZh',
-  email: 'autsky6666@gmail.com',
-  heroTitle: '你好，我是 Yiyu',
-  heroIntro: '我是一名热爱技术与创造的开发者，这里会持续分享我做过的项目、实践经验与学习心得。',
-  seoTitle: 'Yiyu 的个人博客',
-  seoDescription: 'Yiyu 的个人博客：记录项目、技术总结与学习笔记。',
-  projects: [
-    {
-      name: '个人作品集网站',
-      description: '使用纯前端技术搭建，支持响应式布局、项目筛选和在线预览。',
-      link: 'https://github.com/YiyuZh'
-    },
-    {
-      name: '任务管理工具',
-      description: '支持任务分类、优先级排序和数据本地存储，提升个人效率。',
-      link: 'https://github.com/YiyuZh'
-    },
-    {
-      name: 'AI 问答 Demo',
-      description: '集成大模型 API，实现对话问答、历史记录与简单提示词管理。',
-      link: 'https://github.com/YiyuZh'
-    }
-  ]
-};
-
 const setText = (id, value) => {
   const el = document.getElementById(id);
   if (el) {
@@ -51,7 +23,7 @@ const renderProjects = () => {
         <article class="card project">
           <h3>${project.name}</h3>
           <p>${project.description}</p>
-          <a href="${project.link}" target="_blank" rel="noreferrer">查看详情 →</a>
+          <a href="project.html?id=${project.id}">查看详情 →</a>
         </article>
       `
     )

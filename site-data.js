@@ -9,13 +9,13 @@ const SITE_CONFIG = {
   seoDescription: 'Yiyu 的个人博客：记录项目、技术总结与学习笔记。',
   projects: [
     {
-      id: 'portfolio-site',
-      name: '个人作品集网站',
+      id: 'HireMate',
+      name: 'HireMate-HR简历审核系统',
       description: '使用纯前端技术搭建，支持响应式布局、项目筛选和在线预览。',
-      detail: '这是我的个人展示网站项目，目标是把项目经历、技能栈与联系方式整合到一个清晰易读的页面中。重点在于信息结构和移动端体验。',
-      techStack: ['HTML', 'CSS', 'JavaScript'],
+      detail: 'HR resume自动AI审核系统。',
+      techStack: ['Python', 'CSS', 'AI'],
       highlights: ['响应式布局', '项目卡片展示', '简洁可维护结构'],
-      repoUrl: 'https://github.com/YiyuZh/YiyuZh.github.io',
+      repoUrl: 'https://github.com/YiyuZh/HireMate',
       demoUrl: 'https://yiyuzh.github.io'
     },
     {

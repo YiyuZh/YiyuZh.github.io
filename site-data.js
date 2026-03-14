@@ -11,7 +11,7 @@ const SITE_CONFIG = {
     {
       id: 'HireMate',
       name: 'HireMate-HR简历审核系统',
-      description: '使用纯前端技术搭建，支持响应式布局、项目筛选和在线预览。',
+      description: '基于Python制作一款面对HR的简历自动审核机制。',
       detail: 'HR resume自动AI审核系统。',
       techStack: ['Python', 'CSS', 'AI'],
       highlights: ['响应式布局', '项目卡片展示', '简洁可维护结构'],

@@ -32,15 +32,43 @@ if (!project) {
     el.innerHTML = (values || []).map((value) => `<li>${value}</li>`).join('');
   };
 
+  const renderGallery = (images) => {
+    const gallery = document.getElementById('detail-gallery');
+    if (!gallery) {
+      return;
+    }
+
+    if (!images || images.length === 0) {
+      gallery.innerHTML = '<p class="detail-placeholder">暂未配置展示图。</p>';
+      return;
+    }
+
+    gallery.innerHTML = images
+      .slice(0, 4)
+      .map(
+        (image) => `
+          <figure class="gallery-item">
+            <img src="${image.src}" alt="${image.alt || '项目展示图'}" loading="lazy" />
+          </figure>
+        `
+      )
+      .join('');
+  };
+
   setText('detail-name', project.name);
-  setText('detail-description', project.description || '');
+  setText('detail-summary', project.summary || '');
   setText('detail-content', project.detail || '');
+  renderList('detail-core-points', project.corePoints || []);
   renderList('detail-tech', project.techStack || []);
-  renderList('detail-highlights', project.highlights || []);
+  renderList('detail-future', project.futurePlans || []);
+  renderGallery(project.imageGallery || []);
 
   const demoLink = document.getElementById('detail-demo');
   if (demoLink) {
     demoLink.href = project.demoUrl || '#';
+    if (!project.demoUrl || project.demoUrl === '#') {
+      demoLink.textContent = 'Live Demo（待补充链接）';
+    }
   }
 
   const repoLink = document.getElementById('detail-repo');

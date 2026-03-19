@@ -16,7 +16,7 @@ const SITE_CONFIG = {
       techStack: ['Python', 'CSS', 'AI'],
       highlights: ['响应式布局', '项目卡片展示', '简洁可维护结构'],
       repoUrl: 'https://github.com/YiyuZh/HireMate',
-      demoUrl: 'https://yiyuzh.github.io'
+      demoUrl: '140.143.119.81'
     },
     {
       id: 'task-manager',
